@@ -111,6 +111,12 @@
                             >Loading...</span
                         >
                     </div>
+                    <input
+                        type="button"
+                        class="btn btn-light form-control"
+                        value="Выйти"
+                        onclick="logOff()"
+                    />
                 </form>
             </div>
         </div>
@@ -131,6 +137,9 @@
                 name.textContent = result.name;
                 email.textContent = result.email;
             }
+            function logOff(){
+          	location.href = "/authorization_sql.html";
+          }
         </script>
         <script
             src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
